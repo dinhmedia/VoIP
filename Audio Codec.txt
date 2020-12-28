@@ -1,1 +1,27 @@
+Audio Codec
 
+1. G711
+– Còn có tên là Pulse code modulation (PCM) of voice frequencies
+– G711 là 1 narow band audio codec. Tín hiệu audio trải dài trong khoảng 300-3400 Hz và được lấy mẫu tại tốc độ 8000 mẫu/s. Tốc đọ bit là 64 kbps.
+– G711 có 2 chuẩn là chuẩn ulaw (g711u) – North America và alaw (g711a) – Other.
+– G711 sử dụng rất ít tài nguyên CPU ( gần như bằng 0). Nó được coi là 1 codec không nén.
+2. G722
+– Là 1 chuẩn wideband audio codec 7KHz của ITU-T với tốc độ bit 48,56,64 kbps.
+– G722 cải thiện chất lượng audio do lấy mẫu với bandwith audio có bề rộng 50-7000Hz so với G711 là từ 300-3400Hz.
+– G722 phù hợp với các ứng dụng Voice over IP, ví dụ trong mạng LAN khi mà bandwith không phải là vấn đề lớn.
+– G722 được mang trong RTP payload type 9. Mặc định, bit rate của G722 sử dung là 64 Kbps.
+3. G726
+– Được gọi là Adaptive Difference Pulse-code Modulation (ADPCM).
+– Chất lượng voice gần như tương đương với G.711 nhưng băng thông giảm còn 1 nửa.
+4. G729A
+– Codec chất lượng tốt như G.711 với bandwith chỉ còn 8kbps.
+– Tiêu tốn rất nhiều tài nguyên CPU do nén sâu của thuật toán.
+5. GSM
+– Là codec được chuộng sử dụng trong asterisk.
+– Chất lượng audio không bằng G729.
+– Hoạt động ở tốc độ 13 kbps.
+6. iBLC
+– Là codec cân bằng giữa bandwith và chất lượng audio.
+– Được asterisk support, nhưng không phải là 1 codec phổ biến của ITU, do đó, nó thường không tương thích với nhiều IP Phone và các hệ thống VoIP thương mại.
+– Tiêu tốn tài nguyên CPU cao.
+– Tốc độ bit: 13.3 và 15.2 kbps.
