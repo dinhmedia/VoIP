@@ -1,0 +1,6 @@
+KX-HDV130
+
+1- Press the [Menu] softkey (middle softkey) at the bottom of the screen.
+2- Select [System Settings] from the menu.
+3- Enter #136 on the keypad
+4- Select [Yes] when asked if you are sure you want to factory reset the phone.
