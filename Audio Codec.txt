@@ -25,3 +25,13 @@ Audio Codec
 – Được asterisk support, nhưng không phải là 1 codec phổ biến của ITU, do đó, nó thường không tương thích với nhiều IP Phone và các hệ thống VoIP thương mại.
 – Tiêu tốn tài nguyên CPU cao.
 – Tốc độ bit: 13.3 và 15.2 kbps.
+
+################################
+
+Định dạng File: đuôi .Wav
+Bit Rate : 128kbps
+Audio sample size: 16bit
+Channels : 1(mono)
+Audio sample rate: 8kHz
+Audio format: PCM
+################################
