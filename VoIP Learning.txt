@@ -1,0 +1,8 @@
+# asterisk -vrrrrrr
+# core set verbose 9
+# sip show peers
+# sip show peer 100
+# sip show users
+# sip show user 100
+# tail -f /var/log/asterisk/full
+# iptables -nL
