@@ -206,3 +206,20 @@ allow=alaw&ulaw&G729&GSM&G726&G711u&G711a
 check ip
 curl https://ipinfo.io/ip
 
+#########################
+
+[tel4vn]
+username=dddd
+type=friend
+fromuser=dddd
+secret=4150sdsd
+host=sip.texxx.com
+port=50061
+nat=force_report,comedia
+qualify=yes
+disallow=all
+context=from-trunk 
+allow=ulaw,alaw 
+insecure=port,invite
+
+
