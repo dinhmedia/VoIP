@@ -223,3 +223,23 @@ allow=ulaw,alaw
 insecure=port,invite
 
 
+# sms
+Calling out
+host=192.168.1.62
+port=5060
+context=from-pstn
+qualify=yes
+type=peer
+insecure=no
+allow=ulaw,alaw 
+
+# Incoming call
+host=dynamic
+username=dddd
+secret=12345
+insecure=no
+qualify=yes
+type=friend
+context=from-pstn
+
+
