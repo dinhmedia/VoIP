@@ -242,4 +242,11 @@ qualify=yes
 type=friend
 context=from-pstn
 
+#Dinstar 
+
+host=192.168.100.32
+type=peer
+qualify=yes
+disallow=all
+allow=ulaw,alaw
 
