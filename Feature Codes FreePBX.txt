@@ -1,1 +1,10 @@
 
+- In-Call Asterisk Blind Transfer (Chuyển hướng cuộc gọi mù không cần biết bên kia nghe không)
+-> ## EXT number cần chuyển. (##804)
+- In-Call Asterisk Attended Transfer (Chuyển hướng cuộc gọi có đích đến)
+-> *2 bấm số Ext cần gọi  (*2-in ext number)
+- Directed Call Pickup (Cướp cuộc gọi - bắt máy giùm)
+-> ** Ext đang đổ chuông # (**801#)
+
+
+
