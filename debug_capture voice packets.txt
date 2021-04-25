@@ -1,0 +1,6 @@
+https://github.com/dinhmedia/VoIP
+How to capture voice packets for troubleshooting VoIP
+
+-> TCPDUMP
+-> SNGREP
+
