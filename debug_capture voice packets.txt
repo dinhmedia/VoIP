@@ -2,11 +2,11 @@ https://github.com/dinhmedia/VoIP
 How to capture voice packets for troubleshooting VoIP
 
 -> TCPDUMP
-
+# tcpdump -i eth0 -s 0 -w /tmp/test5.pcap
 
 
 
 -> SNGREP
-# tcpdump -i 
-# tcpdump -i eth0 -s 0 -w /tmp/test5.pcap
+# sngrep -i
+
 
