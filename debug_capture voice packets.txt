@@ -38,6 +38,41 @@ If you find trouble installing due to gpg errors try
 
 yum --nogpgcheck install sngrep
 
+-h --help: This usage
+-V --version: Version information
+-d --device: Use this capture device instead of default
+-I --input: Read captured data from pcap file
+-O --output: Write captured data to pcap file
+-c --calls: Only display dialogs starting with INVITE
+-r --rtp: Capture RTP packets payload
+-l --limit: Set capture limit to N dialogs
+-i --icase: Make case insensitive
+-v --invert: Invert
+-N --no-interface: Don't display sngrep interface, just capture
+-q --quiet: Don't print captured dialogs in no interface mode
+-D --dump-config: Print active configuration settings and exit
+-f --config: Read configuration from file
+-R --rotate: Rotate calls when capture limit have been reached.
+-H --eep-send: Homer sipcapture url (udp:X.X.X.X:XXXX)
+-L --eep-listen: Listen for encapsulated packets (udp:X.X.X.X:XXXX)
+-k --keyfile: RSA private keyfile to decrypt captured packets
+For example, capturing all SIP packets from all devices that has source or destination port 5060
+
+sngrep port 5060
+Or displaying SIP packets from eth0 device that has as source or destiny 192.168.0.50 through the 5061 port, saving them to /tmp/sip_capture.pcap
+
+sngrep -d eth0 -O /tmp/sip_capture.pcap host 192.168.0.50 port 5061
+Or displaying all SIP packets for a given host in sip_capture.pcap PCAP file
+
+sngrep -I /tmp/sip_capture.pcap host 10.10.1.50 
+Linux users may add capture permissions to sngrep to avoid run it as root
+
+setcap 'CAP_NET_RAW+eip' /usr/local/bin/sngrep
+
+if the above does not work, try this:
+
+setcap 'CAP_NET_RAW+eip' /usr/bin/sngrep
+
 -> SNGREP
 # sngrep -i
 
