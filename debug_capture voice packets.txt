@@ -7,14 +7,36 @@ How to capture voice packets for troubleshooting VoIP
 
 
 ***********************************
-CentOS 6.x
+Add Irontec repo information to /etc/yum.repos.d/irontec.repo
 
-- Add file 
-# vi /etc/yum.repos.d/irontec.repo
-
+For Centos:
 [irontec]
 name=Irontec RPMs repository
 baseurl=http://packages.irontec.com/centos/$releasever/$basearch/
+
+For Fedora:
+
+[irontec]
+name=Irontec RPMs repository
+baseurl=http://packages.irontec.com/fedora/$releasever/$basearch/
+
+For Red Hat Enterprise Linux:
+
+[irontec]
+name=Irontec RPMs repository
+baseurl=http://packages.irontec.com/rhel/$releasever/$basearch/
+
+Add Irontec repositories public key:
+
+rpm --import http://packages.irontec.com/public.key
+
+And install the package
+
+yum install sngrep
+
+If you find trouble installing due to gpg errors try
+
+yum --nogpgcheck install sngrep
 
 -> SNGREP
 # sngrep -i
