@@ -3,10 +3,22 @@ How to capture voice packets for troubleshooting VoIP
 
 -> TCPDUMP
 # tcpdump -i eth0 -s 0 -w /tmp/test5.pcap
+# tcpdump -i eth0 udp port 5060 or udp portrange 10000-65000 -s 0 -w /tmp/tesgoi.pcap  
 
 
+***********************************
+CentOS 6.x
+
+- Add file 
+# vi /etc/yum.repos.d/irontec.repo
+
+[irontec]
+name=Irontec RPMs repository
+baseurl=http://packages.irontec.com/centos/$releasever/$basearch/
 
 -> SNGREP
 # sngrep -i
+
+
 
 
