@@ -5,6 +5,6 @@
 -> *2 bấm số Ext cần gọi  (*2-in ext number)
 - Directed Call Pickup (Cướp cuộc gọi - bắt máy giùm)
 -> ** Ext đang đổ chuông # (**801#)
-
-
-
+- Changer port 
+# vi/etc/httpd/conf.d/schmoozecom.conf
+# fwconsole sysadmin ports
