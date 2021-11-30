@@ -1,0 +1,27 @@
+
+# Disabling SIP ALG on Fortigate 6.2.2
+
+CLI (command line)  Fortigate
+config system settings
+set sip-expectation disable 
+set sip-nat-trace disable
+set default-voip-alg-mode kernel-helper-based
+end
+
+# Option
+check SIP session-helper
+config system session-helper
+show
+delete SIP 
+delete 13
+end
+
+# Disable  RTP on Fortigate
+config voip profile
+edit default
+config sip
+set rtp disable
+end
+end
+
+Reboot 
